@@ -1,25 +1,44 @@
-# README
+# Verb Generator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This simple Ruby on Rails application generates random verbs using the [Faker gem](https://github.com/faker-ruby). It generates 90 random verbs and exports them to a CSV file.
 
-Things you may want to cover:
+## Ruby Version
+- 3.2.1
 
-* Ruby version
+## Rails Version
+- 7.0.8
 
-* System dependencies
+## System Dependencies
+- [Faker gem](https://github.com/faker-ruby/faker)
 
-* Configuration
+## Configuration
 
-* Database creation
+No specific configuration is required to use this application. Ensure that you have the required Ruby and Rails versions installed, and that the Faker gem is included in your Gemfile.
 
-* Database initialization
+## Database Creation
 
-* How to run the test suite
+The application uses a database to store generated words. You can create the database by running the following command:
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+```rails db:create
+```
 
-* ...
-# verb-generator-
+## Database Initialization
+After creating the database, run the following command to initialize it:
+
+```rails db:migrate
+```
+
+## How to Run the Test Suite
+There are no tests included in this simple application.
+
+## Services
+This application does not use any additional services like job queues, cache servers, or search engines.
+
+## Deployment Instructions
+To run the word generator and export words to a CSV file, use the following command:
+
+```rails runner lib/word_generator.rb
+```
+
+## This command will generate 90 random verbs, save them to the database, and export them to a CSV file named words.csv in the root directory of your Rails application.
