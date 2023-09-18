@@ -20,13 +20,16 @@ No specific configuration is required to use this application. Ensure that you h
 The application uses a database to store generated words. You can create the database by running the following command:
 
 
-```rails db:create
 ```
+ rails db:create 
+```
+
 
 ## Database Initialization
 After creating the database, run the following command to initialize it:
 
-```rails db:migrate
+```
+rails db:migrate
 ```
 
 ## How to Run the Test Suite
