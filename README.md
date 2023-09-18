@@ -41,7 +41,8 @@ This application does not use any additional services like job queues, cache ser
 ## Deployment Instructions
 To run the word generator and export words to a CSV file, use the following command:
 
-```rails runner lib/word_generator.rb
+```
+rails runner lib/word_generator.rb
 ```
 
 ## This command will generate 90 random verbs, save them to the database, and export them to a CSV file named words.csv in the root directory of your Rails application.
